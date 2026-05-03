@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My College Diary</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&family=Caveat:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .modal-content .date {
+            color: #8fbc8f;
+            display: block;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            animation: pop 0.3s ease;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        @keyframes pop {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* CLICKABLE CARD */
+        .diary-card {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-left">My College Diary</a>
+
+            <div class="nav-right">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="diary.html" class="active">Diary</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="diary-page">
+
+        <h1 class="diary-title">Diary</h1>
+        <p class="diary-sub">my thoughts, moments, and everything in between</p>
+
+        <div class="diary-columns">
+
+            <!-- ENTRY 1 -->
+            <div class="entry diary-card" onclick="openDiary(this)">
+                <h2>examination day</h2>
+                <span class="date">march 2026</span>
+                <p>Today is Monday… and honestly, it’s not giving. It’s already examination week, so the pressure is
+                    there, even if I don’t want to admit it.
+                    <br> When I got to school, the first thing I did was talk
+                    to my classmates. Just trying to feel normal. Then I heard there wouldn’t be a handwritten exam, and
+                    of course, I laughed—like okay nice, less to worry about… or so I thought. XD
+                    <br> But then, we had
+                    a hands-on.
+                    <br> So here’s the fun part. I actually reviewed a lot for this, so I thought I was
+                    prepared.
+                    <br> At first, I was calm. I thought I was doing okay, just typing my code and going
+                    through it like usual. Nothing felt wrong in the beginning.
+                    <br> But suddenly, something felt off.
+                    My code wasn’t working, and I had no idea why. That’s when I started getting nervous. I kept
+                    checking everything again and again, scanning every line like I was missing something obvious.
+                    <br>
+                    Time was running, and I still couldn’t figure it out. The pressure was getting real.
+                    <br> Then
+                    finally… I saw it.
+                    <br> A single quote.
+                    <br> Ang liit, but it literally broke everything. I fixed it
+                    right away, and thankfully, it worked. I rushed to finish everything because I only had 1 minute
+                    left out of 15.
+                    <br> Somehow, I made it.
+                    <br> After that, I just sat there, feeling all the stress
+                    leave my body. Today was chaotic, not gonna lie… but I survived. And honestly, that’s enough for
+                    now.
+                    <br> I can finally breathe again.
+                </p>
+            </div>
+
+            <!-- ENTRY 2 -->
+            <div class="entry diary-card" onclick="openDiary(this)">
+                <h2>same day XD</h2>
+                <span class="date">march 2026</span>
+                <p>Hey…<br>
+                    This one’s a small win. And I don’t think it’s just luck… maybe it’s skill—jk. 😭 But honestly, I
+                    feel like this Monday is mine. Two major wins in a row.<br>
+                    It was actually a fun day. I finally got to submit my examination… but of course, it didn’t come
+                    easy. There’s always a backstory—especially when it’s me, the cramming girl.<br>
+                    When I arrived at school, I rushed right away. I immediately took out all my materials for
+                    soldering—hinang—like I usually do. Everything felt like a work in progress, nothing was really
+                    certain yet.<br>
+                    Then time started catching up.<br>
+                    And that’s when I felt it.<br>
+                    I was starting to panic—but in a quiet way. 😭 We were all trying to use the soldering iron at the
+                    same time because I misplaced mine.<br>
+                    But I didn’t let that stop me. I stayed focused on my work. I tried to block everything out, even
+                    though I was feeling anxious. I wasn’t even sure if what I was doing would work… but I just kept
+                    going.<br>
+                    And somehow, at the end of the day, I made it.<br>
+                    My RFID worked.<br>
+                    And when Sir Abenir said my wiring placement was good, that really meant a lot. It felt like all the
+                    effort paid off.<br>
+                    Now I’m just hoping my grade this sem turns out well.<br>
+                    But still…<br>
+                    You did good today.<br>
+                    Two wins. One day.<br>
+                    Yeah… this Monday was yours. 😌</p>
+            </div>
+
+            <!-- ENTRY 3 -->
+            <div class="entry diary-card" onclick="openDiary(this)">
+                <h2>art app</h2>
+                <span class="date">2026</span>
+                <p>I’m really into this subject.
+                    <br>
+                    It teaches me how to be myself. It made me realize that being me—the way I am—is not weird. I don’t
+                    have to change just to fit in, and that’s something I’m learning to accept.
+                    <br>
+                    I’m thankful that this subject is being taught because it helps me gain more knowledge about being
+                    artistic. It also helps me understand why people are unique in their own ways.
+                    <br>
+                    Through this, I’m learning to appreciate differences more, including my own. 😌
+                </p>
+            </div>
+
+            <!-- ENTRY 4 -->
+            <div class="entry diary-card" onclick="openDiary(this)">
+                <h2>.</h2>
+                <span class="date">march 2025</span>
+                <p>I arrived at school at 7:05 AM. The vibe was cold—the air, the wind… everything felt calm.
+                    <br>
+                    When I sat down, I felt something. It was like the calmness just hugged me.
+                    <br>
+                    This is the kind of weather I’ve always liked. It felt like a forest vibe—quiet, peaceful, soft.
+                    <br>
+                    Since I was younger, I’ve always imagined a life like this—somewhere quiet, surrounded by nature.
+                    Just waking up, seeing trees outside, holding a warm drink, and not feeling rushed.
+                    <br>
+                    Nothing complicated. Just calm.
+                    <br>
+                    And somehow today… it felt close to that.
+                </p>
+            </div>
+
+            <!-- ENTRY 5 -->
+            <div class="entry diary-card" onclick="openDiary(this)">
+                <h2>empty</h2>
+                <span class="date">--</span>
+                <p>your text here...</p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="diaryModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDiary()">&times;</span>
+            <div id="modalText"></div>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        function openDiary(card) {
+            const modal = document.getElementById("diaryModal");
+            const content = document.getElementById("modalText");
+
+            content.innerHTML = card.innerHTML;
+            modal.style.display = "flex";
+        }
+
+        function closeDiary() {
+            document.getElementById("diaryModal").style.display = "none";
+        }
+
+        // CLOSE WHEN CLICK OUTSIDE
+        window.onclick = function (e) {
+            const modal = document.getElementById("diaryModal");
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    ```
+
+</body>
+
+</html>
