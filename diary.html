@@ -33,15 +33,28 @@
         }
 
         .modal-content {
-            background: #fff;
-            padding: 30px;
-            border-radius: 16px;
-            max-width: 600px;
+
+            background:
+                rgba(255, 255, 255, .88);
+
+            backdrop-filter: blur(18px);
+
+            padding: 35px;
+
+            border-radius: 28px;
+
+            max-width: 700px;
+
             width: 90%;
+
             max-height: 80vh;
+
             overflow-y: auto;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-            animation: pop 0.3s ease;
+
+            box-shadow:
+                0 25px 60px rgba(0, 0, 0, .18);
+
+            animation: pop .35s ease;
         }
 
         .close {
@@ -95,171 +108,367 @@
         <p class="diary-sub">my thoughts, moments, and everything in between</p>
 
         <div class="diary-columns">
+            <!-- ENTRY -->
+            <div class="entry diary-card" onclick="openDiary(this)">
 
+                <h2>a little message</h2>
+
+                <span class="date">2026</span>
+
+                <p>
+                    If you somehow ended up reading this,
+                    thank you for spending a little bit of your time here.
+                    <br><br>
+
+                    This website may just look like a simple college diary,
+                    but honestly,
+                    it became a small space where I could keep pieces of myself —
+                    my thoughts,
+                    memories,
+                    random moments,
+                    and the things I usually don’t say out loud.
+                    <br><br>
+
+                    I’m still learning a lot,
+                    not just in school,
+                    but also about myself.
+                    <br><br>
+
+                    Some days feel heavy,
+                    some days feel soft,
+                    and some days just quietly pass by.
+                    But I think that’s what growing up really looks like.
+                    <br><br>
+
+                    So if you’re someone who also feels lost sometimes,
+                    pressured,
+                    tired,
+                    or unsure about where life is going —
+                    I hope you know you’re not alone in that feeling.
+                    <br><br>
+
+                    Maybe we’re all just trying our best in different ways.
+                    <br><br>
+
+                    And if no one has told you lately,
+                    I hope you’re proud of yourself for making it this far.
+                    <br><br>
+
+                    Thank you for being here for a while.
+                </p>
+
+            </div>
             <!-- ENTRY 1 -->
             <div class="entry diary-card" onclick="openDiary(this)">
                 <h2>examination day</h2>
                 <span class="date">march 2026</span>
-                <p>Today is Monday… and honestly, it’s not giving. It’s already examination week, so the pressure is
-                    there, even if I don’t want to admit it.
-                    <br> When I got to school, the first thing I did was talk
-                    to my classmates. Just trying to feel normal. Then I heard there wouldn’t be a handwritten exam, and
-                    of course, I laughed—like okay nice, less to worry about… or so I thought. XD
-                    <br> But then, we had
-                    a hands-on.
-                    <br> So here’s the fun part. I actually reviewed a lot for this, so I thought I was
-                    prepared.
-                    <br> At first, I was calm. I thought I was doing okay, just typing my code and going
-                    through it like usual. Nothing felt wrong in the beginning.
-                    <br> But suddenly, something felt off.
-                    My code wasn’t working, and I had no idea why. That’s when I started getting nervous. I kept
-                    checking everything again and again, scanning every line like I was missing something obvious.
-                    <br>
-                    Time was running, and I still couldn’t figure it out. The pressure was getting real.
-                    <br> Then
-                    finally… I saw it.
-                    <br> A single quote.
-                    <br> Ang liit, but it literally broke everything. I fixed it
-                    right away, and thankfully, it worked. I rushed to finish everything because I only had 1 minute
-                    left out of 15.
-                    <br> Somehow, I made it.
-                    <br> After that, I just sat there, feeling all the stress
-                    leave my body. Today was chaotic, not gonna lie… but I survived. And honestly, that’s enough for
-                    now.
-                    <br> I can finally breathe again.
+
+                <p>
+                    Today is Monday… and honestly, it’s already examination week,
+                    so the pressure is there even if I don’t want to admit it.
+                    <br><br>
+
+                    When I got to school, the first thing I did was talk to my classmates.
+                    Just trying to feel normal for a while.
+                    <br><br>
+
+                    Then I heard there wouldn’t be a handwritten exam,
+                    and for a moment I felt relieved.
+                    <br><br>
+
+                    But then we had a hands-on.
+                    <br><br>
+
+                    I actually reviewed a lot for this,
+                    so I thought I was prepared.
+                    At first, everything felt okay.
+                    I was coding normally, going through each step like usual.
+                    <br><br>
+
+                    Then suddenly, something felt off.
+                    My code wasn’t working,
+                    and I had no idea why.
+                    <br><br>
+
+                    I kept checking every line again and again,
+                    trying to figure out what went wrong while the time kept running.
+                    <br><br>
+
+                    Then finally…
+                    I saw it.
+                    <br><br>
+
+                    A single quote.
+                    Something so small literally broke everything.
+                    <br><br>
+
+                    I fixed it immediately and rushed to finish everything.
+                    I only had one minute left.
+                    <br><br>
+
+                    Somehow, I made it.
+                    <br><br>
+
+                    After that, I just sat there feeling all the stress leave my body.
+                    Today was chaotic,
+                    but I survived.
+                    <br><br>
+
+                    And honestly,
+                    that’s enough for now.
                 </p>
             </div>
 
             <!-- ENTRY 2 -->
             <div class="entry diary-card" onclick="openDiary(this)">
-                <h2>same day XD</h2>
+                <h2>same day</h2>
                 <span class="date">march 2026</span>
-                <p>Hey…<br>
-                    This one’s a small win. And I don’t think it’s just luck… maybe it’s skill—jk. 😭 But honestly, I
-                    feel like this Monday is mine. Two major wins in a row.<br>
-                    It was actually a fun day. I finally got to submit my examination… but of course, it didn’t come
-                    easy. There’s always a backstory—especially when it’s me, the cramming girl.<br>
-                    When I arrived at school, I rushed right away. I immediately took out all my materials for
-                    soldering—hinang—like I usually do. Everything felt like a work in progress, nothing was really
-                    certain yet.<br>
-                    Then time started catching up.<br>
-                    And that’s when I felt it.<br>
-                    I was starting to panic—but in a quiet way. 😭 We were all trying to use the soldering iron at the
-                    same time because I misplaced mine.<br>
-                    But I didn’t let that stop me. I stayed focused on my work. I tried to block everything out, even
-                    though I was feeling anxious. I wasn’t even sure if what I was doing would work… but I just kept
-                    going.<br>
-                    And somehow, at the end of the day, I made it.<br>
-                    My RFID worked.<br>
-                    And when Sir Abenir said my wiring placement was good, that really meant a lot. It felt like all the
-                    effort paid off.<br>
-                    Now I’m just hoping my grade this sem turns out well.<br>
-                    But still…<br>
-                    You did good today.<br>
-                    Two wins. One day.<br>
-                    Yeah… this Monday was yours. 😌</p>
+
+                <p>
+                    This one feels like a small win.
+                    <br><br>
+
+                    Monday was surprisingly good to me.
+                    Two major wins in one day.
+                    <br><br>
+
+                    I finally submitted my examination,
+                    but of course it didn’t come easy.
+                    <br><br>
+
+                    The moment I arrived at school,
+                    I immediately prepared all my materials for soldering.
+                    Everything still felt uncertain,
+                    like nothing was fully ready yet.
+                    <br><br>
+
+                    Then time started catching up.
+                    <br><br>
+
+                    I could feel myself getting nervous while everyone was trying to use the soldering iron at the same
+                    time,
+                    especially after I misplaced mine.
+                    <br><br>
+
+                    But I just stayed focused on my work.
+                    Even though I wasn’t fully confident,
+                    I kept going.
+                    <br><br>
+
+                    And somehow,
+                    it worked.
+                    <br><br>
+
+                    My RFID finally functioned,
+                    and when Sir Abenir said my wiring placement was good,
+                    it honestly meant a lot.
+                    <br><br>
+
+                    It felt nice knowing that all the effort paid off somehow.
+                    <br><br>
+
+                    For now,
+                    I’m just hoping this semester turns out okay.
+                    <br><br>
+
+                    But still…
+                    you did good today.
+                </p>
             </div>
 
             <!-- ENTRY 3 -->
             <div class="entry diary-card" onclick="openDiary(this)">
                 <h2>art app</h2>
                 <span class="date">2026</span>
-                <p>I’m really into this subject.
-                    <br>
-                    It teaches me how to be myself. It made me realize that being me—the way I am—is not weird. I don’t
-                    have to change just to fit in, and that’s something I’m learning to accept.
-                    <br>
-                    I’m thankful that this subject is being taught because it helps me gain more knowledge about being
-                    artistic. It also helps me understand why people are unique in their own ways.
-                    <br>
-                    Through this, I’m learning to appreciate differences more, including my own. 😌
+
+                <p>
+                    I’m really into this subject.
+                    <br><br>
+
+                    It teaches me how to be more comfortable with myself.
+                    It made me realize that being different doesn’t automatically mean something is wrong with me.
+                    <br><br>
+
+                    I’m thankful this subject exists because it helps me appreciate creativity more,
+                    not just in art,
+                    but in people too.
+                    <br><br>
+
+                    Everyone expresses themselves differently,
+                    and I think that’s something beautiful.
+                    <br><br>
+
+                    Through this,
+                    I’m slowly learning to appreciate my own way of thinking too.
                 </p>
             </div>
 
             <!-- ENTRY 4 -->
             <div class="entry diary-card" onclick="openDiary(this)">
-                <h2>.</h2>
+                <h2>quiet mornings</h2>
                 <span class="date">march 2025</span>
-                <p>I arrived at school at 7:05 AM. The vibe was cold—the air, the wind… everything felt calm.
-                    <br>
-                    When I sat down, I felt something. It was like the calmness just hugged me.
-                    <br>
-                    This is the kind of weather I’ve always liked. It felt like a forest vibe—quiet, peaceful, soft.
-                    <br>
-                    Since I was younger, I’ve always imagined a life like this—somewhere quiet, surrounded by nature.
-                    Just waking up, seeing trees outside, holding a warm drink, and not feeling rushed.
-                    <br>
-                    Nothing complicated. Just calm.
-                    <br>
-                    And somehow today… it felt close to that.
-                </p>
-            </div>
 
-            <!-- ENTRY 5 -->
-            <div class="entry diary-card" onclick="openDiary(this)">
-                <h2>random</h2>
-                <span class="date">may 2025</span>
-                <p>Adulthood is not a conversation I’m ready for.
-                    <br>
-                    Thesis? Already?
-                    Graduating??? …aw nuh.
-                    <br>
-                    I still want to have fun.
-                    Like, I’m not done being here yet.
-                    <br>
-                    Is that even valid?
-                    Do I still have time?
-                    <br>
-                    I don’t know.
-                    <br>
-                    But I guess… I’m just somewhere in between—
-                    not a kid anymore,
-                    but not ready to let go of it either.
-                </p>
-            </div>
-
-            <!-- ENTRY 6 -->
-            <div class="entry diary-card" onclick="openDiary(this)">
-                <h2>02.19</h2>
-                <span class="date">feb 2026</span>
                 <p>
-                    <b>20.</b><br><br>
-                    I made it here.
+                    I arrived at school at 7:05 AM.
+                    The air felt cold,
+                    the wind was soft,
+                    and everything around me felt calm.
                     <br><br>
-                    Alive.
-                    Breathing.
-                    Healthy.
+
+                    When I sat down,
+                    it felt like the silence itself was comforting me.
                     <br><br>
-                    And maybe that’s enough for now.
+
+                    This is the kind of weather I’ve always loved.
+                    Quiet,
+                    peaceful,
+                    almost like a forest somewhere far away from everything.
                     <br><br>
-                    TYL.
+
+                    Since I was younger,
+                    I’ve always imagined a life like that.
+                    Somewhere calm,
+                    surrounded by nature,
+                    with slow mornings and no pressure to rush.
+                    <br><br>
+
+                    Nothing complicated.
+                    Just peace.
+                    <br><br>
+
+                    And somehow today,
+                    it felt close to that.
                 </p>
             </div>
 
-            <!-- ENTRY 7  -->
+            <!-- ENTRY 7 -->
             <div class="entry diary-card" onclick="openDiary(this)">
                 <h2>enk</h2>
                 <span class="date">may 2026</span>
-                <p>Yay. I finally made my website.
-                    <br>
-                    It’s kinda boring… no animations, nothing fancy.
-                    But honestly, it’s okay.
-                    <br>
+
+                <p>
+                    Yay.
+                    I finally made my website.
+                    <br><br>
+
+                    It’s still unfinished in some ways,
+                    but honestly,
+                    I’m proud of it.
+                    <br><br>
+
                     At least I made something.
-                    <br>
-                    It’s there. It works. It’s mine.
-                    <br>
+                    <br><br>
+
+                    It’s there.
+                    It works.
+                    It’s mine.
+                    <br><br>
+
                     I can always improve it later.
-                    <br>
-                    For now… I’m just glad I started. :D
+                    <br><br>
+
+                    For now,
+                    I’m just glad I started.
                 </p>
             </div>
-
-            <!-- ENTRY 8 -->
+            <!-- ENTRY -->
             <div class="entry diary-card" onclick="openDiary(this)">
-                <h2>empty</h2>
-                <span class="date">--</span>
-                <p>your text here...</p>
+
+                <h2>life and works of rizal</h2>
+
+                <span class="date">may 2026</span>
+
+                <p>
+                    It’s finals week,
+                    and Rizal Life and Works was the only subject where we still had a written exam.
+                    <br><br>
+
+                    Honestly,
+                    I feel like I actually did good this time.
+                    I got 48 out of 55.
+                    <br><br>
+
+                    Maybe it’s still not the highest score for others,
+                    but for me,
+                    it felt rewarding.
+                    <br><br>
+
+                    I feel like somehow,
+                    I was able to make up for the moments where I felt like I was falling behind.
+                    <br><br>
+
+                    And honestly,
+                    I’m proud of myself for that.
+                    <br><br>
+
+                    Back in Grade 11,
+                    I genuinely didn’t know how to review properly.
+                    No one really introduced me to that kind of discipline,
+                    so most of the time I just went with whatever I could do.
+                    <br><br>
+
+                    Sometimes I wonder how different things would’ve been if I learned those habits earlier.
+                    Maybe I would’ve become more confident in myself sooner.
+                    <br><br>
+
+                    But I guess growth still counts,
+                    even if it happens late.
+                    <br><br>
+
+                    And maybe this version of me —
+                    the one who’s finally trying —
+                    is already becoming someone better than before.
+                </p>
+
+            </div>
+            <!-- ENTRY -->
+            <div class="entry diary-card" onclick="openDiary(this)">
+
+                <h2>disappearing habit</h2>
+
+                <span class="date">may 2026</span>
+
+                <p>
+                    I noticed something about myself lately.
+                    <br><br>
+
+                    Whenever things start feeling too heavy,
+                    too stressful,
+                    or emotionally overwhelming,
+                    my first instinct is always to disappear for a while.
+                    <br><br>
+
+                    Not completely,
+                    but enough to avoid everything that feels difficult to face.
+                    <br><br>
+
+                    Sometimes I stop replying.
+                    Sometimes I avoid showing up.
+                    Sometimes I pretend things don’t bother me even when they actually do.
+                    <br><br>
+
+                    I think it’s my way of protecting myself when I feel like I can’t handle something properly.
+                    <br><br>
+
+                    And honestly,
+                    I’ve been thinking a lot lately.
+                    Wondering if something is wrong with me,
+                    or if I’m just too overwhelmed by everything happening all at once.
+                    <br><br>
+
+                    There are days where my mind feels too loud,
+                    even when everything around me is quiet.
+                    <br><br>
+
+                    But I also know I’m still trying.
+                    Even in small ways.
+                    Even on the days where I feel lost.
+                    <br><br>
+
+                    Maybe healing doesn’t always look strong or obvious.
+                    Maybe sometimes it just looks like surviving another day and slowly learning yourself along the way.
+                </p>
+
             </div>
             <!-- ENTRY 5  
             <div class="entry diary-card" onclick="openDiary(this)">
@@ -319,8 +528,25 @@
             }
         }
     </script>
-    ```
+    <script>
 
+        document.addEventListener("mousemove", (e) => {
+
+            const sparkle = document.createElement("div");
+
+            sparkle.className = "sparkle";
+
+            sparkle.style.left = e.clientX + "px";
+            sparkle.style.top = e.clientY + "px";
+
+            document.body.appendChild(sparkle);
+
+            setTimeout(() => {
+                sparkle.remove();
+            }, 800);
+
+        });
+    </script>
 </body>
 
 </html>

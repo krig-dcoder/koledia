@@ -3,143 +3,112 @@
 
 <head>
     <meta charset="UTF-8">
-
     <title>About - My College Diary</title>
-
     <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600;700&family=Patrick+Hand&family=Dancing+Script:wght@500;600;700&display=swap"
         rel="stylesheet">
 
 <body class="about-page">
-
     <!-- NAV -->
     <nav>
-
         <div class="nav-inner">
-
             <a href="index.html" class="nav-left">
                 My College Diary
             </a>
-
             <div class="nav-right">
-
                 <a href="index.html">Home</a>
-
-                <a href="about.html" class="active">
-                    About
-                </a>
-
+                <a href="about.html" class="active"> About </a>
                 <a href="diary.html">Diary</a>
-
                 <a href="gallery.html">Gallery</a>
-
                 <a href="contact.html">Contact</a>
-
             </div>
-
         </div>
-
     </nav>
 
     <!-- ABOUT -->
     <section class="about-section">
-
         <!-- FLOATING SYMBOLS -->
         <div class="float-about about-star">✦</div>
-
         <div class="float-about about-heart">.ೀ</div>
-
         <div class="float-about about-swirl">୨ৎ</div>
-
         <div class="float-about about-sparkle">⋆˚࿔</div>
 
         <!-- CONTENT -->
         <div class="about-content">
 
-            <!-- IMAGES -->
-            <div class="about-images">
+            <!-- ABOUT IMAGE SECTION -->
+            <!-- LEFT SIDE -->
+            <div class="about-left">
+                <!-- ABOUT IMAGE SECTION -->
+                <div class="about-images">
+                    <img src="me8.jpg" class="img-back" alt="">
+                    <img src="tabtme.jpg" class="img-main" alt="">
+                </div>
 
-                <img src="tabtme.jpg" class="img-main">
-
-                <img src="tabtme1.jpg" class="img-back">
-
+                <!-- MUSIC SECTION -->
+                <div class="music-mini">
+                    <img src="decode.jpg" onclick="playSong('decode.mp3')">
+                    <img src="king.jpg" onclick="playSong('king.mp3')">
+                    <img src="circles.jpg" onclick="playSong('circles.mp3')">
+                </div>
+                <audio id="musicPlayer"></audio>
+                <p class="music-note">
+                    ✦ click an album to play a song
+                </p>
             </div>
 
             <!-- TEXT -->
             <div class="about-text">
-
-                <h2 class="about-name">
-                    Joyce
-                </h2>
-
+                <h2 class="about-name">Joyce</h2>
                 <p class="about-role">
-                    IT Student • Learning Design • Creative Explorer
-                </p>
-
+                <p class="about-role">
+                    somewhere between growing up and figuring things out</p>
                 <!-- BIO -->
                 <div class="about-bio">
+                    <div class="about-bio">
+                        <div class="bio-title"> ✦ ⋆｡˚ abt me ⋆｡˚✦ </div>
+                        <p>Hi, I’m Joyce — an IT student who’s still figuring things out
+                            little by little while trying to enjoy the process along the way.</p>
+                        <p>I’m someone who enjoys quiet moments, good music,
+                            creative ideas, and turning simple things into something
+                            visually meaningful. </p>
+                        <p>Lately, I’ve been getting more interested in web design,
+                            editing, and creating spaces that feel personal and comforting.</p>
+                        <p>I may not always know exactly where I’m going,
+                            but I’ve learned that not everything has to be figured out immediately.</p>
+                        <p>So for now, I just want to keep creating memories,
+                            learning new things, and becoming a better version of myself
+                            at my own pace.</p>
 
-                    <div class="bio-title">
-                        ✦ ⋆｡˚ abt me ⋆｡˚✦
+                        <p class="bio-end"> ✧ still learning. still growing. </p>
                     </div>
 
-                    <p>
-                        Hi, I’m Joyce — an IT student who enjoys creating things that feel personal, creative, and
-                        meaningful.
-                    </p>
-
-                    <p>
-                        This website is my little space on the internet where I share parts of my college life,
-                        thoughts, experiences, and the things I create along the way.
-                    </p>
-
-                    <p>
-                        I’ve been getting more interested in designing and editing websites, exploring new ideas, and
-                        turning simple concepts into something visually appealing.
-                    </p>
-
-                    <p>
-                        I know people say we still have time to figure things out, and maybe that’s true — but sometimes
-                        life feels too short to stay the same forever.
-                    </p>
-
-                    <p>
-                        So for now, I just want to keep learning, improving, and becoming someone I can genuinely be
-                        proud of.
-                    </p>
-
-                    <p class="bio-end">
-                        ✧ still learning. still becoming.
-                    </p>
-
-                </div>
-
-                <!-- HOBBIES -->
-                <div class="hobbies">
-
+                    <!-- HOBBIES -->
+                    <div class="hobby-box">
+                        <span class="hobby-icon">🎧</span>
+                        <p>listening to music</p>
+                    </div>
                     <div class="hobby-box">
                         <span class="hobby-icon">🎮</span>
                         <p>playing games</p>
                     </div>
-
                     <div class="hobby-box">
                         <span class="hobby-icon">🏸</span>
                         <p>badminton</p>
                     </div>
-
                     <div class="hobby-box">
                         <span class="hobby-icon">🏓</span>
                         <p>table tennis</p>
                     </div>
-
                 </div>
 
                 <!-- SKILLS -->
                 <div class="skills">
-
+                    <div class="bio-title">
+                        ✦ ⋆｡˚ skill bar ⋆｡˚✦
+                    </div>
                     <div class="skill">
-
                         <div class="skill-info">
                             <span>gaming</span>
                             <span>100%</span>
@@ -148,59 +117,89 @@
                         <div class="skill-bar">
                             <div class="fill gaming"></div>
                         </div>
-
                     </div>
 
                     <div class="skill">
-
                         <div class="skill-info">
                             <span>editing</span>
                             <span>70%</span>
                         </div>
-
                         <div class="skill-bar">
                             <div class="fill editing"></div>
                         </div>
-
                     </div>
-
                     <div class="skill">
-
                         <div class="skill-info">
                             <span>coding</span>
                             <span>1%</span>
                         </div>
-
                         <div class="skill-bar">
                             <div class="fill coding"></div>
                         </div>
-
                     </div>
+                    <div class="skill">
 
+                        <div class="skill-info">
+                            <span>collaboration with chat</span>
+                            <span>100%</span>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="fill gaming"></div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- MOTIVATION -->
                 <div class="motivation">
 
-                    <p>
-                        “maybe life is short,
-                        maybe we really don’t have
-                        as much time as we think —
-                        so i’d rather keep creating,
-                        improving, and becoming
-                        someone i’ll be proud of.”
-                    </p>
-
+                    <p>“maybe life doesn’t always need a perfect plan.
+                        sometimes you just keep going,
+                        collect small moments,
+                        and slowly become someone new along the way.”</p>
                 </div>
-
             </div>
-
         </div>
 
     </section>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("mousemove", (e) => {
+            const sparkle = document.createElement("div");
+            sparkle.className = "sparkle";
+            sparkle.style.left = e.clientX + "px";
+            sparkle.style.top = e.clientY + "px";
+            document.body.appendChild(sparkle);
+            setTimeout(() => {
+                sparkle.remove();
+            }, 800);
+        });
+    </script>
+    <script>
 
+        const player = document.getElementById("musicPlayer");
+        const nowPlaying =
+            document.querySelector(".now-playing");
+        let currentSong = "";
+        function playSong(song, title) {
+
+            /* SAME SONG = PAUSE */
+            if (currentSong === song && !player.paused) {
+                player.pause();
+                nowPlaying.innerHTML =
+                    "music paused . . .";
+                return;
+            }
+            /* PLAY SONG */
+            currentSong = song;
+            player.src = song;
+            player.volume = 0.25;
+            player.play();
+            nowPlaying.innerHTML =
+                "now playing: " + title + " ✦";
+        }
+    </script>
 </body>
 
 </html>

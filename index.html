@@ -4,23 +4,23 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My College Diary</title>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- FONTS -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600;700&family=Patrick+Hand&family=Dancing+Script:wght@500;600;700&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body class="home">
-
+    <!-- NAVIGATION -->
     <nav>
         <div class="nav-inner">
-            <a href="index.html" class="nav-left">My College Diary</a>
-
+            <a href="index.html" class="nav-left">
+                My College Diary
+            </a>
             <div class="nav-right">
                 <a href="index.html" class="active">Home</a>
                 <a href="about.html">About</a>
@@ -44,15 +44,18 @@
         <div class="float star2">⋆˚࿔</div>
         <div class="float cute">ִ ࣪𖤐.ᐟ</div>
 
-
-        <!-- LEFT -->
+        <!-- LEFT SIDE -->
         <div class="hero-left">
 
-            <p class="mini-title">my personal space</p>
+            <p class="mini-title">
+                my personal space
+            </p>
 
             <h1>
                 Hello, I’m <br>
-                <span class="accent">Joycee! ۶ৎ</span>
+                <span class="accent">
+                    Joycee! ۶ৎ
+                </span>
             </h1>
 
             <p class="role">
@@ -64,29 +67,50 @@
                 small progress, and experiences throughout my college life.
             </p>
 
-            <a href="diary.html" class="hero-btn">read my diary</a>
+            <a href="diary.html" class="hero-btn">
+                enter my diary ✦
+            </a>
 
         </div>
 
-        <!-- RIGHT -->
+        <!-- RIGHT SIDE -->
         <div class="hero-right">
 
             <!-- BACK CARD -->
             <div class="photo-back"></div>
 
             <!-- MAIN PHOTO -->
-            <img src="tprofile.jpg" alt="profile">
+            <img src="tprofile.jpg" alt="Joycee profile photo" class="hero-photo">
 
-            <!-- SMALL FLOATING TAG -->
-            <div class="photo-tag">✧ still learning</div>
-            <div class="photo-tag second-tag">✦ web design era</div>
+            <!-- FLOATING TAGS -->
+            <div class="photo-tag top-tag">
+                ✧ ITeresian yarn???!
+            </div>
+
+            <div class="photo-tag second-tag">
+                ✦ etuc langs
+            </div>
 
         </div>
 
     </section>
 
+    <!-- JS -->
     <script src="script.js"></script>
+    <div class="sparkle-container"></div>F
+    <script>
+        document.addEventListener("mousemove", (e) => {
+            const sparkle = document.createElement("div");
+            sparkle.className = "sparkle";
+            sparkle.style.left = e.clientX + "px";
+            sparkle.style.top = e.clientY + "px";
+            document.body.appendChild(sparkle);
+            setTimeout(() => {
+                sparkle.remove();
+            }, 800);
+        });
 
+    </script>
 </body>
 
 </html>

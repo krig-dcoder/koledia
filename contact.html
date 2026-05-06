@@ -80,24 +80,23 @@
         </p>
 
         <!-- FORM -->
-        <form class="contact-form">
+        <form class="contact-form" action="https://formspree.io/f/xwvyqljw" method="POST">
 
-            <input type="text" placeholder="your name">
+            <input type="text" name="name" placeholder="your name" required>
 
-            <input type="email" placeholder="your email">
+            <input type="email" name="email" placeholder="your email" required>
 
-            <textarea placeholder="write something sweet..."></textarea>
+            <textarea name="message" placeholder="write something sweet..." required></textarea>
 
             <button type="submit">
                 send message ✦
             </button>
 
         </form>
-
         <!-- SOCIALS -->
         <div class="socials">
 
-            <a href="https://facebook.com/" target="_blank" class="social-box">
+            <a href="https://www.facebook.com/mydazai" target="_blank" class="social-box">
 
                 <i class="fa-brands fa-facebook-f"></i>
 
@@ -105,7 +104,7 @@
 
             </a>
 
-            <a href="https://instagram.com/" target="_blank" class="social-box">
+            <a href="https://www.instagram.com/eajjou/" target="_blank" class="social-box">
 
                 <i class="fa-brands fa-instagram"></i>
 
@@ -113,7 +112,7 @@
 
             </a>
 
-            <a href="https://github.com/" target="_blank" class="social-box">
+            <a href="https://github.com/krig-dcoder" target="_blank" class="social-box">
 
                 <i class="fa-brands fa-github"></i>
 
@@ -121,15 +120,7 @@
 
             </a>
 
-            <a href="https://discord.com/" target="_blank" class="social-box">
-
-                <i class="fa-brands fa-discord"></i>
-
-                Discord
-
-            </a>
-
-            <a href="#" class="social-box">
+            <a href="https://www.roblox.com/users/1608201965/profile" class="social-box">
 
                 <i class="fa-solid fa-gamepad"></i>
 
@@ -137,18 +128,28 @@
 
             </a>
 
-            <a href="#" class="social-box">
-
-                <i class="fa-solid fa-trophy"></i>
-
-                Mobile Legends
-
-            </a>
-
         </div>
 
     </section>
+    <script>
 
+        document.addEventListener("mousemove", (e) => {
+
+            const sparkle = document.createElement("div");
+
+            sparkle.className = "sparkle";
+
+            sparkle.style.left = e.clientX + "px";
+            sparkle.style.top = e.clientY + "px";
+
+            document.body.appendChild(sparkle);
+
+            setTimeout(() => {
+                sparkle.remove();
+            }, 800);
+
+        });
+    </script>
 </body>
 
 </html>
