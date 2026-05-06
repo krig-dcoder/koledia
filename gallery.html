@@ -1,137 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - My College Diary</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
-</head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600;700&family=Patrick+Hand&family=Dancing+Script:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
 <body>
-<nav>
-    <div class="nav-inner">
-        <a href="index.html" class="nav-left">My College Diary</a>
-
-        <div class="nav-right">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="diary.html">Diary</a>
-            <a href="gallery.html" class="active">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-</nav>
-
-<div class="container">
-
-    <h1 class="gallery-title">⋆‧°𓏲ּ𝄢 Gallery⋆˚꩜｡</h1>
-    <p class="gallery-sub">moments, memories, and everything in between</p>
-
-    <div class="gallery">
-
-        <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren.jpg">
-            <div class="caption">2-1
+    <!-- NAV -->
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-left">
+                My College Diary
+            </a>
+            <div class="nav-right">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="diary.html">Diary</a>
+                <a href="gallery.html" class="active">
+                    Gallery
+                </a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
-        <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren1.jpg">
-            <div class="caption">ploweer</div>
+    </nav>
+
+    <!-- GALLERY -->
+    <div class="container">
+        <h1 class="gallery-title">
+            ⋆‧°𓏲ּ𝄢 Gallery⋆˚꩜｡
+        </h1>
+        <!-- ALBUMS -->
+        <div class="album-tabs">
+            <button class="tab active">
+                all
+            </button>
+
+            <button class="tab">
+                group photos
+            </button>
+
+            <button class="tab">
+                duos
+            </button>
+
+            <button class="tab">
+                me
+            </button>
+
+            <button class="tab">
+                school dump
+            </button>
+
+            <button class="tab">
+                randoms
+            </button>
+
         </div>
-        <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren3.jpg">
-            <div class="caption">flower pero complete</div>
-        </div>
-        <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren4.jpg">
-            <div class="caption">kopi after mag hinangs</div>
-        </div>
-        <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren5.jpg">
-            <div class="caption">mcdo</div>
-        </div>
-         <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren6.jpg">
-            <div class="caption">mimingsss</div>
-        </div>
-         <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren7.jpg">
-            <div class="caption">girliess</div>
-        </div>
-         <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren10.jpg">
-            <div class="caption">masterpiece w janna</div>
-        </div>
-         <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren9.jpg">
-            <div class="caption">pyramid yarn</div>
-        </div>
-         <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren11.jpg">
-            <div class="caption">artwalk</div>
-        </div>
-        <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren13.jpg">
-            <div class="caption">free taym</div>
-        </div>
-        <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren15.jpg">
-            <div class="caption">kapagod mag sportfest</div>
-        </div>
-        <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren12.jpg">
-            <div class="caption">hbd</div>
-        </div>
-        <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren14.jpg">
-            <div class="caption">pa etuc asim kilig</div>
-        </div>
-        <div class="gallery-item" onclick="openImage(this)">
-            <img src="tfren8.jpg">
-            <div class="caption">p.e tym</div>
-        </div>
-    
-         <div class="gallery-item" onclick="openImage(this)">
-            <img src="love1.jpg">
-            <div class="caption">p.e tym</div>
-        
+
+        <!-- GRID -->
+        <div class="gallery">
+
+            <!-- GROUP -->
+            <div class="gallery-item group" onclick="openImage(this)">
+                <img src="tfren.jpg">
+                <div class="caption">2-1</div>
+            </div>
+
+            <div class="gallery-item group" onclick="openImage(this)">
+                <img src="tfren7.jpg">
+                <div class="caption">girliess</div>
+            </div>
+
+            <!-- DUOS -->
+            <div class="gallery-item duo" onclick="openImage(this)">
+                <img src="tfren10.jpg">
+                <div class="caption">masterpiece w janna</div>
+            </div>
+
+            <div class="gallery-item duo" onclick="openImage(this)">
+                <img src="love1.jpg">
+                <div class="caption">
+                    my love, first time pumasok here sa skol
+                </div>
+            </div>
+
+            <!-- SCHOOL -->
+            <div class="gallery-item school" onclick="openImage(this)">
+                <img src="tfren15.jpg">
+                <div class="caption">kapagod mag sportfest</div>
+            </div>
+
+            <div class="gallery-item school" onclick="openImage(this)">
+                <img src="tfren8.jpg">
+                <div class="caption">p.e tym</div>
+            </div>
+
+            <div class="gallery-item school" onclick="openImage(this)">
+                <img src="tfren14.jpg">
+                <div class="caption">pa etuc asim kilig</div>
+            </div>
+
+            <!-- RANDOMS -->
+            <div class="gallery-item random" onclick="openImage(this)">
+                <img src="tfren4.jpg">
+                <div class="caption">kopi after mag hinangs</div>
+            </div>
+
+            <div class="gallery-item random" onclick="openImage(this)">
+                <img src="tfren5.jpg">
+                <div class="caption">mcdo</div>
+            </div>
+
+            <div class="gallery-item random" onclick="openImage(this)">
+                <img src="tfren6.jpg">
+                <div class="caption">mimingsss</div>
+            </div>
+
+            <div class="gallery-item random" onclick="openImage(this)">
+                <img src="tfren9.jpg">
+                <div class="caption">pyramid yarn</div>
+            </div>
+
+            <div class="gallery-item random" onclick="openImage(this)">
+                <img src="tfren11.jpg">
+                <div class="caption">artwalk</div>
+            </div>
+
+            <div class="gallery-item random" onclick="openImage(this)">
+                <img src="tfren13.jpg">
+                <div class="caption">free taym</div>
+            </div>
+
+            <div class="gallery-item random" onclick="openImage(this)">
+                <img src="tfren1.jpg">
+                <div class="caption">ploweer</div>
+            </div>
+
+            <div class="gallery-item random" onclick="openImage(this)">
+                <img src="tfren3.jpg">
+                <div class="caption">flower pero complete</div>
+            </div>
+
+
+
         </div>
 
     </div>
 
-</div>
+    <!-- MODAL -->
+    <div id="imgModal" class="img-modal">
 
-<!-- MODAL -->
-<div id="imgModal" class="img-modal">
-    <span class="close" onclick="closeImage()">&times;</span>
-    <img id="modalImg">
-    <div id="modalCaption"></div>
-</div>
+        <span class="close" onclick="closeImage()">
+            &times;
+        </span>
 
-<!-- SCRIPT -->
-<script>
-    function openImage(el) {
-        const modal = document.getElementById("imgModal");
-        const modalImg = document.getElementById("modalImg");
-        const caption = el.querySelector(".caption");
+        <img id="modalImg">
 
-        modalImg.src = el.querySelector("img").src;
-        document.getElementById("modalCaption").innerText = caption ? caption.innerText : "";
+        <div id="modalCaption"></div>
 
-        modal.style.display = "flex";
-    }
+    </div>
 
-    function closeImage() {
-        document.getElementById("imgModal").style.display = "none";
-    }
+    <!-- SCRIPT -->
+    <script>
 
-    window.onclick = function(e) {
-        const modal = document.getElementById("imgModal");
-        if (e.target === modal) {
-            modal.style.display = "none";
+        /* OPEN IMAGE */
+        function openImage(el) {
+
+            const modal =
+                document.getElementById("imgModal");
+
+            const modalImg =
+                document.getElementById("modalImg");
+
+            const caption =
+                el.querySelector(".caption");
+
+            modalImg.src =
+                el.querySelector("img").src;
+
+            document.getElementById("modalCaption").innerText =
+                caption ? caption.innerText : "";
+
+            modal.style.display = "flex";
         }
-    }
-</script>
+
+        /* CLOSE */
+        function closeImage() {
+
+            document.getElementById("imgModal").style.display =
+                "none";
+        }
+
+        /* OUTSIDE CLICK */
+        window.onclick = function (e) {
+
+            const modal =
+                document.getElementById("imgModal");
+
+            if (e.target === modal) {
+
+                modal.style.display = "none";
+            }
+        }
+
+        /* --- ALBUM FILTER ----------------------------------------------------------------------------------------- */
+
+        const tabs =
+            document.querySelectorAll(".tab");
+
+        const items =
+            document.querySelectorAll(".gallery-item");
+
+        /* CLICK TAB */
+        tabs.forEach(tab => {
+
+            tab.addEventListener("click", () => {
+
+                /* REMOVE ACTIVE */
+                tabs.forEach(btn =>
+                    btn.classList.remove("active")
+                );
+
+                /* ACTIVE */
+                tab.classList.add("active");
+
+                const text =
+                    tab.innerText.toLowerCase();
+
+                /* SHOW ALL */
+                if (text === "all") {
+
+                    items.forEach(item => {
+
+                        item.style.display = "block";
+                    });
+
+                    return;
+                }
+
+                /* FILTER */
+                items.forEach(item => {
+
+                    item.style.display = "none";
+
+                    if (
+                        text === "group photos" &&
+                        item.classList.contains("group")
+                    ) {
+                        item.style.display = "block";
+                    }
+
+                    if (
+                        text === "duos" &&
+                        item.classList.contains("duo")
+                    ) {
+                        item.style.display = "block";
+                    }
+
+                    if (
+                        text === "me" &&
+                        item.classList.contains("me")
+                    ) {
+                        item.style.display = "block";
+                    }
+
+                    if (
+                        text === "school dump" &&
+                        item.classList.contains("school")
+                    ) {
+                        item.style.display = "block";
+                    }
+
+                    if (
+                        text === "randoms" &&
+                        item.classList.contains("random")
+                    ) {
+                        item.style.display = "block";
+                    }
+
+                });
+
+            });
+
+        });
+
+    </script>
 </body>
 
 </html>
