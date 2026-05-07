@@ -2483,3 +2483,244 @@ nav {
     box-shadow:
         0 18px 34px rgba(0, 0, 0, .12);
 }
+
+/* =========================================
+   MOBILE NAVBAR
+========================================= */
+
+.menu-toggle {
+
+    display: none;
+
+    font-size: 1.8rem;
+
+    cursor: pointer;
+
+    color: #5d7564;
+
+    transition: .3s ease;
+}
+
+.menu-toggle:hover {
+
+    transform: scale(1.05);
+}
+
+/* MOBILE */
+
+@media (max-width:768px) {
+
+    body {
+
+        padding-top: 100px;
+    }
+
+    nav {
+
+        width: 94%;
+
+        top: 12px;
+    }
+
+    .nav-inner {
+
+        justify-content: center;
+
+        position: relative;
+
+        padding: 16px 20px;
+
+        border-radius: 22px;
+    }
+
+    /* CENTER TITLE */
+
+    .nav-left {
+
+        font-size: 1.7rem;
+
+        text-align: center;
+    }
+
+    /* SHOW MENU BUTTON */
+
+    .menu-toggle {
+
+        display: block;
+
+        position: absolute;
+
+        right: 20px;
+    }
+
+    /* MOBILE MENU */
+
+    .nav-right {
+
+        position: absolute;
+
+        top: 82px;
+
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 16px;
+
+        padding: 26px 0;
+
+        border-radius: 24px;
+
+        background:
+            rgba(255, 255, 255, .82);
+
+        backdrop-filter: blur(18px);
+
+        -webkit-backdrop-filter: blur(18px);
+
+        box-shadow:
+            0 18px 35px rgba(0, 0, 0, .08);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition: .35s ease;
+    }
+
+    /* SHOW MENU */
+
+    .nav-right.show {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0);
+    }
+
+    /* LINKS */
+
+    .nav-right a {
+
+        width: 82%;
+
+        text-align: center;
+
+        padding: 14px;
+
+        font-size: 1rem;
+    }
+
+    /* HERO */
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 70px;
+
+        padding: 40px 20px 80px;
+    }
+
+    .hero h1 {
+
+        font-size: 3rem;
+    }
+
+    .accent {
+
+        font-size: 3.5rem;
+    }
+
+    /* ABOUT */
+
+    .about-content {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 60px;
+    }
+
+    .about-images {
+
+        width: 300px;
+
+        height: 380px;
+    }
+
+    .about-images img {
+
+        width: 240px;
+
+        height: 320px;
+    }
+
+    .about-name {
+
+        font-size: 2.8rem;
+    }
+
+    /* DIARY */
+
+    .diary-columns {
+
+        columns: 1;
+    }
+
+    .diary-title {
+
+        font-size: 3rem;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-title {
+
+        font-size: 3rem;
+    }
+
+    /* CONTACT */
+
+    .contact-page {
+
+        padding: 120px 20px 80px;
+    }
+
+    .contact-title {
+
+        font-size: 3rem;
+    }
+
+    .socials {
+
+        grid-template-columns: 1fr;
+    }
+
+    /* FLOATS */
+
+    .float,
+    .float-about,
+    .float-contact,
+    .diary-float {
+
+        opacity: .35;
+    }
+}
