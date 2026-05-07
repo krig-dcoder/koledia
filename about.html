@@ -36,8 +36,6 @@
 
         <!-- CONTENT -->
         <div class="about-content">
-
-            <!-- ABOUT IMAGE SECTION -->
             <!-- LEFT SIDE -->
             <div class="about-left">
                 <!-- ABOUT IMAGE SECTION -->
@@ -48,118 +46,130 @@
 
                 <!-- MUSIC SECTION -->
                 <div class="music-mini">
-                    <img src="decode.jpg" onclick="playSong('decode.mp3')">
-                    <img src="king.jpg" onclick="playSong('king.mp3')">
-                    <img src="circles.jpg" onclick="playSong('circles.mp3')">
+
+                    <!-- DECODE -->
+                    <img src="decode.jpg" alt="Decode" onclick="playSong('decode.mp3', 'Decode - Paramore')">
+
+                    <!-- KING FOR A DAY -->
+                    <img src="king.jpg" alt="King For A Day" onclick="playSong('king.mp3', 'King For A Day - PTV')">
+
+                    <!-- CIRCLES -->
+                    <img src="circles.jpg" alt="Circles" onclick="playSong('circles.mp3', 'Circles - PTV')">
+
                 </div>
+
+                <!-- MUSIC PLAYER -->
                 <audio id="musicPlayer"></audio>
-                <p class="music-note">
+
+                <!-- NOW PLAYING -->
+                <p class="music-note now-playing">
                     ✦ click an album to play a song
                 </p>
-            </div>
+                </div>
 
-            <!-- TEXT -->
-            <div class="about-text">
-                <h2 class="about-name">Joyce</h2>
-                <p class="about-role">
-                <p class="about-role">
-                    somewhere between growing up and figuring things out</p>
-                <!-- BIO -->
-                <div class="about-bio">
+                <!-- TEXT -->
+                <div class="about-text">
+                    <h2 class="about-name">Joyce</h2>
+                    <p class="about-role">
+                    <p class="about-role">
+                        somewhere between growing up and figuring things out</p>
+                    <!-- BIO -->
                     <div class="about-bio">
-                        <div class="bio-title"> ✦ ⋆｡˚ abt me ⋆｡˚✦ </div>
-                        <p>Hi, I’m Joyce — an IT student who’s still figuring things out
-                            little by little while trying to enjoy the process along the way.</p>
-                        <p>I’m someone who enjoys quiet moments, good music,
-                            creative ideas, and turning simple things into something
-                            visually meaningful. </p>
-                        <p>Lately, I’ve been getting more interested in web design,
-                            editing, and creating spaces that feel personal and comforting.</p>
-                        <p>I may not always know exactly where I’m going,
-                            but I’ve learned that not everything has to be figured out immediately.</p>
-                        <p>So for now, I just want to keep creating memories,
-                            learning new things, and becoming a better version of myself
-                            at my own pace.</p>
+                        <div class="about-bio">
+                            <div class="bio-title"> ✦ ⋆｡˚ abt me ⋆｡˚✦ </div>
+                            <p>Hi, I’m Joyce — an IT student who’s still figuring things out
+                                little by little while trying to enjoy the process along the way.</p>
+                            <p>I’m someone who enjoys quiet moments, good music,
+                                creative ideas, and turning simple things into something
+                                visually meaningful. </p>
+                            <p>Lately, I’ve been getting more interested in web design,
+                                editing, and creating spaces that feel personal and comforting.</p>
+                            <p>I may not always know exactly where I’m going,
+                                but I’ve learned that not everything has to be figured out immediately.</p>
+                            <p>So for now, I just want to keep creating memories,
+                                learning new things, and becoming a better version of myself
+                                at my own pace.</p>
 
-                        <p class="bio-end"> ✧ still learning. still growing. </p>
-                    </div>
-
-                    <!-- HOBBIES -->
-                    <div class="hobby-box">
-                        <span class="hobby-icon">🎧</span>
-                        <p>listening to music</p>
-                    </div>
-                    <div class="hobby-box">
-                        <span class="hobby-icon">🎮</span>
-                        <p>playing games</p>
-                    </div>
-                    <div class="hobby-box">
-                        <span class="hobby-icon">🏸</span>
-                        <p>badminton</p>
-                    </div>
-                    <div class="hobby-box">
-                        <span class="hobby-icon">🏓</span>
-                        <p>table tennis</p>
-                    </div>
-                </div>
-
-                <!-- SKILLS -->
-                <div class="skills">
-                    <div class="bio-title">
-                        ✦ ⋆｡˚ skill bar ⋆｡˚✦
-                    </div>
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>gaming</span>
-                            <span>100%</span>
+                            <p class="bio-end"> ✧ still learning. still growing. </p>
                         </div>
+                    
 
-                        <div class="skill-bar">
-                            <div class="fill gaming"></div>
+                        <!-- HOBBIES -->
+                        <div class="hobby-box">
+                            <span class="hobby-icon">🎧</span>
+                            <p>listening to music</p>
+                        </div>
+                        <div class="hobby-box">
+                            <span class="hobby-icon">🎮</span>
+                            <p>playing games</p>
+                        </div>
+                        <div class="hobby-box">
+                            <span class="hobby-icon">🏸</span>
+                            <p>badminton</p>
+                        </div>
+                        <div class="hobby-box">
+                            <span class="hobby-icon">🏓</span>
+                            <p>table tennis</p>
                         </div>
                     </div>
 
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>editing</span>
-                            <span>70%</span>
+                    <!-- SKILLS -->
+                    <div class="skills">
+                        <div class="bio-title">
+                            ✦ ⋆｡˚ skill bar ⋆｡˚✦
                         </div>
-                        <div class="skill-bar">
-                            <div class="fill editing"></div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>gaming</span>
+                                <span>100%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="fill gaming"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>editing</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="fill editing"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>coding</span>
+                                <span>1%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="fill coding"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+
+                            <div class="skill-info">
+                                <span>collaboration with chat</span>
+                                <span>100%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="fill gaming"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>coding</span>
-                            <span>1%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="fill coding"></div>
-                        </div>
+
+                    <!-- MOTIVATION -->
+                    <div class="motivation">
+
+                        <p>“maybe life doesn’t always need a perfect plan.
+                            sometimes you just keep going,
+                            collect small moments,
+                            and slowly become someone new along the way.”</p>
                     </div>
-                    <div class="skill">
-
-                        <div class="skill-info">
-                            <span>collaboration with chat</span>
-                            <span>100%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="fill gaming"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MOTIVATION -->
-                <div class="motivation">
-
-                    <p>“maybe life doesn’t always need a perfect plan.
-                        sometimes you just keep going,
-                        collect small moments,
-                        and slowly become someone new along the way.”</p>
                 </div>
             </div>
-        </div>
 
     </section>
 
@@ -200,6 +210,42 @@
                 "now playing: " + title + " ✦";
         }
     </script>
+    <!-- BACK TO TOP -->
+
+    <button id="backToTop">
+
+        ↑
+
+    </button>
+    <script>
+
+        const backToTop =
+            document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 300) {
+
+                backToTop.classList.add("show");
+
+            } else {
+
+                backToTop.classList.remove("show");
+            }
+        });
+
+        backToTop.addEventListener("click", () => {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>
