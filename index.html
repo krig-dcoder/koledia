@@ -4,71 +4,115 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My College Diary</title>
+
     <!-- CSS -->
+
     <link rel="stylesheet" href="style.css">
-    <!-- FONTS -->
+
+    <!-- GOOGLE FONTS -->
+
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600;700&family=Patrick+Hand&family=Dancing+Script:wght@500;600;700&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body class="home">
-    <!-- NAVIGATION -->
-    <nav>
-        <div class="nav-inner">
-            <a href="index.html" class="nav-left">
-                My College Diary
-            </a>
-            <div class="nav-right">
-                <a href="index.html" class="active">Home</a>
-                <a href="about.html">About</a>
-                <a href="diary.html">Diary</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
 
-    <!-- NAV mobile -->
+    <!-- =========================================
+         NAVBAR
+    ========================================= -->
+
     <nav>
+
         <div class="nav-inner">
+
             <!-- LOGO -->
+
             <a href="index.html" class="nav-left">
                 My College Diary
             </a>
 
-            <!-- MOBILE MENU BUTTON -->
+            <!-- MOBILE BUTTON -->
+
             <div class="menu-toggle" id="menuToggle">
                 ☰
             </div>
 
             <!-- NAV LINKS -->
+
             <div class="nav-right" id="mobileMenu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="diary.html">Diary</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a>
+
+                <a href="index.html" class="active">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="diary.html">
+                    Diary
+                </a>
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
             </div>
+
         </div>
+
     </nav>
 
-    <!-- HERO -->
+    <!-- =========================================
+         HERO SECTION
+    ========================================= -->
+
     <section class="hero">
 
-        <!-- FLOATING DESIGNS -->
-        <div class="float star">✦</div>
-        <div class="float heart">.ೀ</div>
-        <div class="float swirl">୨ৎ</div>
-        <div class="float dot">☁</div>
+        <!-- FLOATING DECORATIONS -->
 
-        <div class="float sparkle">.✦ ݁˖</div>
-        <div class="float star2">⋆˚࿔</div>
-        <div class="float cute">ִ ࣪𖤐.ᐟ</div>
+        <div class="float star">
+            ✦
+        </div>
 
-        <!-- LEFT SIDE -->
+        <div class="float heart">
+            .ೀ
+        </div>
+
+        <div class="float swirl">
+            ୨ৎ
+        </div>
+
+        <div class="float dot">
+            ☁
+        </div>
+
+        <div class="float sparkle">
+            .✦ ݁˖
+        </div>
+
+        <div class="float star2">
+            ⋆˚࿔
+        </div>
+
+        <div class="float cute">
+            ִ ࣪𖤐.ᐟ
+        </div>
+
+        <!-- =========================================
+             LEFT SIDE
+        ========================================= -->
+
         <div class="hero-left">
 
             <p class="mini-title">
@@ -76,19 +120,26 @@
             </p>
 
             <h1>
+
                 Hello, I’m <br>
+
                 <span class="accent">
                     Joycee! ۶ৎ
                 </span>
+
             </h1>
 
             <p class="role">
-                IT student • learning design • slowly figuring things out
+                IT student • learning design • exploring creativity
             </p>
 
             <p class="desc">
-                This is where I share my journey, thoughts,
-                small progress, and experiences throughout my college life.
+
+                This is where I share my journey,
+                thoughts, small progress, and
+                experiences throughout my
+                college life.
+
             </p>
 
             <a href="diary.html" class="hero-btn">
@@ -97,16 +148,22 @@
 
         </div>
 
-        <!-- RIGHT SIDE -->
+        <!-- =========================================
+             RIGHT SIDE
+        ========================================= -->
+
         <div class="hero-right">
 
-            <!-- BACK CARD -->
+            <!-- BACKGROUND CARD -->
+
             <div class="photo-back"></div>
 
             <!-- MAIN PHOTO -->
+
             <img src="tprofile.jpg" alt="Joycee profile photo" class="hero-photo">
 
             <!-- FLOATING TAGS -->
+
             <div class="photo-tag top-tag">
                 ✧ ITeresian yarn???!
             </div>
@@ -119,22 +176,41 @@
 
     </section>
 
-    <!-- JS -->
-    <script src="script.js"></script>
-    <div class="sparkle-container"></div>F
+    <!-- =========================================
+         SPARKLE EFFECT
+    ========================================= -->
+
     <script>
+
         document.addEventListener("mousemove", (e) => {
-            const sparkle = document.createElement("div");
+
+            const sparkle =
+                document.createElement("div");
+
             sparkle.className = "sparkle";
-            sparkle.style.left = e.clientX + "px";
-            sparkle.style.top = e.clientY + "px";
+
+            sparkle.style.left =
+                e.clientX + "px";
+
+            sparkle.style.top =
+                e.clientY + "px";
+
             document.body.appendChild(sparkle);
+
             setTimeout(() => {
+
                 sparkle.remove();
+
             }, 800);
+
         });
 
     </script>
+
+    <!-- =========================================
+         MOBILE MENU
+    ========================================= -->
+
     <script>
 
         const menuToggle =
@@ -150,6 +226,11 @@
         });
 
     </script>
+
+    <!-- MAIN JS -->
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

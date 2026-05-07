@@ -6,30 +6,41 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Diary - My College Diary</title>
+
     <!-- CSS -->
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600;700&family=Patrick+Hand&family=Dancing+Script:wght@500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- =========================================
+         MODAL CSS
+    ========================================= -->
+
     <style>
-        /* MODAL */
         .modal {
+
             display: none;
+
             position: fixed;
+
             inset: 0;
-            background: rgba(0, 0, 0, 0.5);
+
+            background:
+                rgba(0, 0, 0, 0.5);
+
             backdrop-filter: blur(5px);
+
             justify-content: center;
             align-items: center;
-            z-index: 999;
-        }
 
-        .modal-content .date {
-            color: #8fbc8f;
-            display: block;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
+            z-index: 99999;
         }
 
         .modal-content {
@@ -51,86 +62,174 @@
 
             overflow-y: auto;
 
+            position: relative;
+
             box-shadow:
                 0 25px 60px rgba(0, 0, 0, .18);
 
             animation: pop .35s ease;
         }
 
+        .modal-content .date {
+
+            color: #8fbc8f;
+
+            display: block;
+
+            margin-bottom: 10px;
+
+            letter-spacing: 1px;
+        }
+
         .close {
+
             position: absolute;
+
             top: 20px;
             right: 25px;
+
             font-size: 24px;
+
+            cursor: pointer;
+        }
+
+        .diary-card {
             cursor: pointer;
         }
 
         @keyframes pop {
+
             from {
+
                 transform: scale(0.9);
+
                 opacity: 0;
             }
 
             to {
+
                 transform: scale(1);
+
                 opacity: 1;
             }
         }
 
-        /* CLICKABLE CARD */
-        .diary-card {
-            cursor: pointer;
+        /* MOBILE */
+
+        @media (max-width:768px) {
+
+            .modal-content {
+
+                width: 92%;
+
+                padding: 24px;
+
+                max-height: 85vh;
+            }
+
+            .close {
+
+                top: 14px;
+                right: 18px;
+
+                font-size: 28px;
+            }
         }
     </style>
+
 </head>
 
-<body>
-    <nav>
-        <div class="nav-inner">
-            <a href="index.html" class="nav-left">My College Diary</a>
+<body class="diary-body">
 
-            <div class="nav-right">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="diary.html" class="active">Diary</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <!-- =========================================
+         NAVBAR
+    ========================================= -->
 
-    <!-- NAV  mobile-->
     <nav>
+
         <div class="nav-inner">
+
             <!-- LOGO -->
+
             <a href="index.html" class="nav-left">
                 My College Diary
             </a>
-            <!-- MOBILE MENU BUTTON -->
+
+            <!-- MOBILE BUTTON -->
+
             <div class="menu-toggle" id="menuToggle">
                 ☰
             </div>
-            <!-- NAV LINKS -->
+
+            <!-- NAVIGATION -->
+
             <div class="nav-right" id="mobileMenu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="diary.html">Diary</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="diary.html" class="active">
+                    Diary
+                </a>
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
             </div>
+
         </div>
+
     </nav>
 
+    <!-- =========================================
+         DIARY PAGE
+    ========================================= -->
+
     <div class="diary-page">
+
         <!-- FLOATING SYMBOLS -->
-        <div class="diary-float star">✦</div>
-        <div class="diary-float swirl">୨ৎ</div>
-        <div class="diary-float sparkle">⋆˚࿔</div>
-        <h1 class="diary-title">Diary</h1>
-        <p class="diary-sub">my thoughts, moments, and everything in between</p>
+
+        <div class="diary-float star">
+            ✦
+        </div>
+
+        <div class="diary-float swirl">
+            ୨ৎ
+        </div>
+
+        <div class="diary-float sparkle">
+            ⋆˚࿔
+        </div>
+
+        <!-- TITLE -->
+
+        <h1 class="diary-title">
+            Diary
+        </h1>
+
+        <p class="diary-sub">
+            my thoughts, moments,
+            and everything in between
+        </p>
+
+        <!-- =========================================
+     DIARY ENTRIES
+========================================= -->
 
         <div class="diary-columns">
+
             <!-- ENTRY -->
+
             <div class="entry diary-card" onclick="openDiary(this)">
 
                 <h2>a little message</h2>
@@ -180,9 +279,13 @@
                 </p>
 
             </div>
-            <!-- ENTRY 1 -->
+
+            <!-- ENTRY -->
+
             <div class="entry diary-card" onclick="openDiary(this)">
+
                 <h2>examination day</h2>
+
                 <span class="date">march 2026</span>
 
                 <p>
@@ -239,11 +342,15 @@
                     And honestly,
                     that’s enough for now.
                 </p>
+
             </div>
 
-            <!-- ENTRY 2 -->
+            <!-- ENTRY -->
+
             <div class="entry diary-card" onclick="openDiary(this)">
+
                 <h2>same day</h2>
+
                 <span class="date">march 2026</span>
 
                 <p>
@@ -296,11 +403,15 @@
                     But still…
                     you did good today.
                 </p>
+
             </div>
 
-            <!-- ENTRY 3 -->
+            <!-- ENTRY -->
+
             <div class="entry diary-card" onclick="openDiary(this)">
+
                 <h2>art app</h2>
+
                 <span class="date">2026</span>
 
                 <p>
@@ -323,11 +434,15 @@
                     Through this,
                     I’m slowly learning to appreciate my own way of thinking too.
                 </p>
+
             </div>
 
-            <!-- ENTRY 4 -->
+            <!-- ENTRY -->
+
             <div class="entry diary-card" onclick="openDiary(this)">
+
                 <h2>quiet mornings</h2>
+
                 <span class="date">march 2025</span>
 
                 <p>
@@ -361,11 +476,15 @@
                     And somehow today,
                     it felt close to that.
                 </p>
+
             </div>
 
-            <!-- ENTRY 7 -->
+            <!-- ENTRY -->
+
             <div class="entry diary-card" onclick="openDiary(this)">
+
                 <h2>enk</h2>
+
                 <span class="date">may 2026</span>
 
                 <p>
@@ -392,233 +511,170 @@
                     For now,
                     I’m just glad I started.
                 </p>
-            </div>
-            <!-- ENTRY -->
-            <div class="entry diary-card" onclick="openDiary(this)">
-
-                <h2>life and works of rizal</h2>
-
-                <span class="date">may 2026</span>
-
-                <p>
-                    It’s finals week,
-                    and Rizal Life and Works was the only subject where we still had a written exam.
-                    <br><br>
-
-                    Honestly,
-                    I feel like I actually did good this time.
-                    I got 48 out of 55.
-                    <br><br>
-
-                    Maybe it’s still not the highest score for others,
-                    but for me,
-                    it felt rewarding.
-                    <br><br>
-
-                    I feel like somehow,
-                    I was able to make up for the moments where I felt like I was falling behind.
-                    <br><br>
-
-                    And honestly,
-                    I’m proud of myself for that.
-                    <br><br>
-
-                    Back in Grade 11,
-                    I genuinely didn’t know how to review properly.
-                    No one really introduced me to that kind of discipline,
-                    so most of the time I just went with whatever I could do.
-                    <br><br>
-
-                    Sometimes I wonder how different things would’ve been if I learned those habits earlier.
-                    Maybe I would’ve become more confident in myself sooner.
-                    <br><br>
-
-                    But I guess growth still counts,
-                    even if it happens late.
-                    <br><br>
-
-                    And maybe this version of me —
-                    the one who’s finally trying —
-                    is already becoming someone better than before.
-                </p>
 
             </div>
-            <!-- ENTRY -->
-            <div class="entry diary-card" onclick="openDiary(this)">
-
-                <h2>disappearing habit</h2>
-
-                <span class="date">may 2026</span>
-
-                <p>
-                    I noticed something about myself lately.
-                    <br><br>
-
-                    Whenever things start feeling too heavy,
-                    too stressful,
-                    or emotionally overwhelming,
-                    my first instinct is always to disappear for a while.
-                    <br><br>
-
-                    Not completely,
-                    but enough to avoid everything that feels difficult to face.
-                    <br><br>
-
-                    Sometimes I stop replying.
-                    Sometimes I avoid showing up.
-                    Sometimes I pretend things don’t bother me even when they actually do.
-                    <br><br>
-
-                    I think it’s my way of protecting myself when I feel like I can’t handle something properly.
-                    <br><br>
-
-                    And honestly,
-                    I’ve been thinking a lot lately.
-                    Wondering if something is wrong with me,
-                    or if I’m just too overwhelmed by everything happening all at once.
-                    <br><br>
-
-                    There are days where my mind feels too loud,
-                    even when everything around me is quiet.
-                    <br><br>
-
-                    But I also know I’m still trying.
-                    Even in small ways.
-                    Even on the days where I feel lost.
-                    <br><br>
-
-                    Maybe healing doesn’t always look strong or obvious.
-                    Maybe sometimes it just looks like surviving another day and slowly learning yourself along the way.
-                </p>
-
-            </div>
-            <!-- ENTRY 5  
-            <div class="entry diary-card" onclick="openDiary(this)">
-                <h2>empty</h2>
-                <span class="date">--</span>
-                <p>your text here...</p>
-            </div>-->
-            <!-- ENTRY 5  
-            <div class="entry diary-card" onclick="openDiary(this)">
-                <h2>empty</h2>
-                <span class="date">--</span>
-                <p>your text here...</p>
-            </div>-->
-            <!-- ENTRY 5  
-            <div class="entry diary-card" onclick="openDiary(this)">
-                <h2>empty</h2>
-                <span class="date">--</span>
-                <p>your text here...</p>
-            </div>-->
-            <!-- ENTRY 5  
-            <div class="entry diary-card" onclick="openDiary(this)">
-                <h2>empty</h2>
-                <span class="date">--</span>
-                <p>your text here...</p>
-            </div>-->
 
         </div>
-    </div>
 
-    <!-- MODAL -->
-    <div id="diaryModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeDiary()">&times;</span>
-            <div id="modalText"></div>
+        <!-- =========================================
+         MODAL
+    ========================================= -->
+
+        <div id="diaryModal" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeDiary()">
+
+                    &times;
+
+                </span>
+
+                <div id="modalText"></div>
+
+            </div>
+
         </div>
-    </div>
 
-    <!-- SCRIPT -->
-    <script>
-        function openDiary(card) {
-            const modal = document.getElementById("diaryModal");
-            const content = document.getElementById("modalText");
+        <!-- =========================================
+         BACK TO TOP
+    ========================================= -->
 
-            content.innerHTML = card.innerHTML;
-            modal.style.display = "flex";
-        }
+        <button id="backToTop">
+            ↑
+        </button>
 
-        function closeDiary() {
-            document.getElementById("diaryModal").style.display = "none";
-        }
+        <!-- =========================================
+         OPEN DIARY
+    ========================================= -->
 
-        // CLOSE WHEN CLICK OUTSIDE
-        window.onclick = function (e) {
-            const modal = document.getElementById("diaryModal");
-            if (e.target === modal) {
-                modal.style.display = "none";
+        <script>
+
+            function openDiary(card) {
+
+                const modal =
+                    document.getElementById("diaryModal");
+
+                const content =
+                    document.getElementById("modalText");
+
+                content.innerHTML =
+                    card.innerHTML;
+
+                modal.style.display = "flex";
             }
-        }
-    </script>
-    <script>
 
-        document.addEventListener("mousemove", (e) => {
+            function closeDiary() {
 
-            const sparkle = document.createElement("div");
-
-            sparkle.className = "sparkle";
-
-            sparkle.style.left = e.clientX + "px";
-            sparkle.style.top = e.clientY + "px";
-
-            document.body.appendChild(sparkle);
-
-            setTimeout(() => {
-                sparkle.remove();
-            }, 800);
-
-        });
-    </script>
-    <!-- BACK TO TOP -->
-
-    <button id="backToTop">
-
-        ↑
-
-    </button>
-    <script>
-
-        const backToTop =
-            document.getElementById("backToTop");
-
-        window.addEventListener("scroll", () => {
-
-            if (window.scrollY > 300) {
-
-                backToTop.classList.add("show");
-
-            } else {
-
-                backToTop.classList.remove("show");
+                document.getElementById("diaryModal")
+                    .style.display = "none";
             }
-        });
 
-        backToTop.addEventListener("click", () => {
+            /* CLOSE OUTSIDE */
 
-            window.scrollTo({
+            window.onclick = function (e) {
 
-                top: 0,
+                const modal =
+                    document.getElementById("diaryModal");
 
-                behavior: "smooth"
+                if (e.target === modal) {
+
+                    modal.style.display = "none";
+                }
+            }
+
+        </script>
+
+        <!-- =========================================
+         SPARKLE EFFECT
+    ========================================= -->
+
+        <script>
+
+            document.addEventListener("mousemove", (e) => {
+
+                const sparkle =
+                    document.createElement("div");
+
+                sparkle.className = "sparkle-effect";
+
+                sparkle.style.left =
+                    e.clientX + "px";
+
+                sparkle.style.top =
+                    e.clientY + "px";
+
+                document.body.appendChild(sparkle);
+
+                setTimeout(() => {
+
+                    sparkle.remove();
+
+                }, 800);
+
             });
-        });
 
-    </script>
-    <script>
+        </script>
 
-        const menuToggle =
-            document.getElementById("menuToggle");
+        <!-- =========================================
+         BACK TO TOP
+    ========================================= -->
 
-        const mobileMenu =
-            document.getElementById("mobileMenu");
+        <script>
 
-        menuToggle.addEventListener("click", () => {
+            const backToTop =
+                document.getElementById("backToTop");
 
-            mobileMenu.classList.toggle("show");
+            window.addEventListener("scroll", () => {
 
-        });
+                if (window.scrollY > 300) {
 
-    </script>
+                    backToTop.classList.add("show");
+
+                } else {
+
+                    backToTop.classList.remove("show");
+                }
+            });
+
+            backToTop.addEventListener("click", () => {
+
+                window.scrollTo({
+
+                    top: 0,
+
+                    behavior: "smooth"
+
+                });
+
+            });
+
+        </script>
+
+        <!-- =========================================
+         MOBILE MENU
+    ========================================= -->
+
+        <script>
+
+            const menuToggle =
+                document.getElementById("menuToggle");
+
+            const mobileMenu =
+                document.getElementById("mobileMenu");
+
+            menuToggle.addEventListener("click", () => {
+
+                mobileMenu.classList.toggle("show");
+
+            });
+
+        </script>
+
+        <!-- MAIN JS -->
+
+        <script src="script.js"></script>
+
 </body>
 
 </html>

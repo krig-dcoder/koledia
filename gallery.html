@@ -5,65 +5,97 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
     <title>Gallery - My College Diary</title>
+
     <!-- CSS -->
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600;700&family=Patrick+Hand&family=Dancing+Script:wght@500;600;700&display=swap"
         rel="stylesheet">
 
-<body>
-    <!-- NAV -->
-    <nav>
-        <div class="nav-inner">
-            <a href="index.html" class="nav-left">
-                My College Diary
-            </a>
-            <div class="nav-right">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="diary.html">Diary</a>
-                <a href="gallery.html" class="active">
-                    Gallery
-                </a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
+</head>
 
-    <!-- NAV  mobile-->
+<body class="gallery-page">
+
+    <!-- =========================================
+         NAVBAR
+    ========================================= -->
+
     <nav>
+
         <div class="nav-inner">
+
             <!-- LOGO -->
+
             <a href="index.html" class="nav-left">
                 My College Diary
             </a>
-            <!-- MOBILE MENU BUTTON -->
+
+            <!-- MOBILE BUTTON -->
+
             <div class="menu-toggle" id="menuToggle">
                 ☰
             </div>
+
             <!-- NAV LINKS -->
+
             <div class="nav-right" id="mobileMenu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="diary.html">Diary</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="diary.html">
+                    Diary
+                </a>
+
+                <a href="gallery.html" class="active">
+                    Gallery
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
             </div>
+
         </div>
+
     </nav>
 
-    <!-- GALLERY -->
+    <!-- =========================================
+         GALLERY PAGE
+    ========================================= -->
+
     <div class="container">
+
+        <!-- TITLE -->
+
         <h1 class="gallery-title">
             ⋆‧°𓏲ּ𝄢 Gallery⋆˚꩜｡
         </h1>
-        <!-- ALBUMS -->
+
+        <!-- =========================================
+             ALBUM TABS
+        ========================================= -->
+
         <div class="album-tabs">
+
             <button class="tab active">
                 all
             </button>
+
             <button class="tab">
                 group photos
             </button>
@@ -81,7 +113,11 @@
             </button>
 
         </div>
-        <!-- GRID -->
+
+        <!-- =========================================
+             GALLERY GRID
+        ========================================= -->
+
         <div class="gallery">
 
             <!-- ================= GROUP ================= -->
@@ -204,6 +240,7 @@
                 <img src="tabtme.jpg">
                 <div class="caption">emong tanan2</div>
             </div>
+
             <div class="gallery-item me" onclick="openImage(this)">
                 <img src="me11.jpg">
                 <div class="caption">myloveee</div>
@@ -218,7 +255,6 @@
                 <img src="me13.jpg">
                 <div class="caption">hart hart</div>
             </div>
-
 
             <!-- ================= RANDOMS ================= -->
 
@@ -249,7 +285,9 @@
 
             <div class="gallery-item random" onclick="openImage(this)">
                 <img src="random7.jpg">
-                <div class="caption">aesthetic talaga ng building ng teresa</div>
+                <div class="caption">
+                    aesthetic talaga ng building ng teresa
+                </div>
             </div>
 
             <div class="gallery-item random" onclick="openImage(this)">
@@ -280,11 +318,18 @@
         </div>
 
     </div>
-    <!-- MODAL -->
+
+    <!-- =========================================
+         IMAGE MODAL
+    ========================================= -->
+
     <div id="imgModal" class="img-modal">
 
-        <span class="close" onclick="closeImage()">
+        <span class="close"
+            onclick="closeImage()">
+
             &times;
+
         </span>
 
         <img id="modalImg">
@@ -293,10 +338,20 @@
 
     </div>
 
-    <!-- SCRIPT -->
+    <!-- =========================================
+         BACK TO TOP
+    ========================================= -->
+
+    <button id="backToTop">
+        ↑
+    </button>
+
+    <!-- =========================================
+         IMAGE MODAL SCRIPT
+    ========================================= -->
+
     <script>
 
-        /* OPEN IMAGE */
         function openImage(el) {
 
             const modal =
@@ -311,20 +366,21 @@
             modalImg.src =
                 el.querySelector("img").src;
 
-            document.getElementById("modalCaption").innerText =
+            document.getElementById("modalCaption")
+                .innerText =
                 caption ? caption.innerText : "";
 
             modal.style.display = "flex";
         }
 
-        /* CLOSE */
         function closeImage() {
 
-            document.getElementById("imgModal").style.display =
-                "none";
+            document.getElementById("imgModal")
+                .style.display = "none";
         }
 
-        /* OUTSIDE CLICK */
+        /* CLOSE OUTSIDE */
+
         window.onclick = function (e) {
 
             const modal =
@@ -336,7 +392,13 @@
             }
         }
 
-        /* --- ALBUM FILTER ----------------------------------------------------------------------------------------- */
+    </script>
+
+    <!-- =========================================
+         ALBUM FILTER
+    ========================================= -->
+
+    <script>
 
         const tabs =
             document.querySelectorAll(".tab");
@@ -344,23 +406,19 @@
         const items =
             document.querySelectorAll(".gallery-item");
 
-        /* CLICK TAB */
         tabs.forEach(tab => {
 
             tab.addEventListener("click", () => {
 
-                /* REMOVE ACTIVE */
                 tabs.forEach(btn =>
                     btn.classList.remove("active")
                 );
 
-                /* ACTIVE */
                 tab.classList.add("active");
 
                 const text =
                     tab.innerText.toLowerCase();
 
-                /* SHOW ALL */
                 if (text === "all") {
 
                     items.forEach(item => {
@@ -371,7 +429,6 @@
                     return;
                 }
 
-                /* FILTER */
                 items.forEach(item => {
 
                     item.style.display = "none";
@@ -411,33 +468,42 @@
         });
 
     </script>
-    <div class="sparkle-container"></div>
+
+    <!-- =========================================
+         SPARKLE EFFECT
+    ========================================= -->
+
     <script>
 
         document.addEventListener("mousemove", (e) => {
 
-            const sparkle = document.createElement("div");
+            const sparkle =
+                document.createElement("div");
 
-            sparkle.className = "sparkle";
+            sparkle.className = "sparkle-effect";
 
-            sparkle.style.left = e.clientX + "px";
-            sparkle.style.top = e.clientY + "px";
+            sparkle.style.left =
+                e.clientX + "px";
+
+            sparkle.style.top =
+                e.clientY + "px";
 
             document.body.appendChild(sparkle);
 
             setTimeout(() => {
+
                 sparkle.remove();
+
             }, 800);
 
         });
+
     </script>
-    <!-- BACK TO TOP -->
 
-    <button id="backToTop">
+    <!-- =========================================
+         BACK TO TOP SCRIPT
+    ========================================= -->
 
-        ↑
-
-    </button>
     <script>
 
         const backToTop =
@@ -462,10 +528,17 @@
                 top: 0,
 
                 behavior: "smooth"
+
             });
+
         });
 
     </script>
+
+    <!-- =========================================
+         MOBILE MENU
+    ========================================= -->
+
     <script>
 
         const menuToggle =
@@ -481,6 +554,11 @@
         });
 
     </script>
+
+    <!-- MAIN JS -->
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

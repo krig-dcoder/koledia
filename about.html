@@ -3,44 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - My College Diary</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"><!-- CSS -->
+    <!-- GOOGLE FONTS -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600;700&family=Patrick+Hand&family=Dancing+Script:wght@500;600;700&display=swap"
         rel="stylesheet">
+</head>
 
 <body class="about-page">
-    <!-- NAV -->
-    <nav>
-        <div class="nav-inner">
-            <a href="index.html" class="nav-left">
-                My College Diary
-            </a>
-            <div class="nav-right">
-                <a href="index.html">Home</a>
-                <a href="about.html" class="active"> About </a>
-                <a href="diary.html">Diary</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- NAV  mobile-->
+    <!--NAVBAR -->
     <nav>
         <div class="nav-inner">
             <!-- LOGO -->
-            <a href="index.html" class="nav-left">
-                My College Diary
-            </a>
+            <a href="index.html" class="nav-left">My College Diary</a>
+
             <!-- MOBILE MENU BUTTON -->
-            <div class="menu-toggle" id="menuToggle">
-                ☰
-            </div>
-            <!-- NAV LINKS -->
+            <div class="menu-toggle" id="menuToggle">☰</div>
+            <!-- NAVIGATION -->
             <div class="nav-right" id="mobileMenu">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
+                <a href="about.html" class="active">About</a>
                 <a href="diary.html">Diary</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="contact.html">Contact</a>
@@ -48,9 +32,9 @@
         </div>
     </nav>
 
-    <!-- ABOUT -->
+    <!--ABOUT SECTION-->
     <section class="about-section">
-        <!-- FLOATING SYMBOLS -->
+        <!-- FLOATING DECORATIONS -->
         <div class="float-about about-star">✦</div>
         <div class="float-about about-heart">.ೀ</div>
         <div class="float-about about-swirl">୨ৎ</div>
@@ -58,187 +42,382 @@
 
         <!-- CONTENT -->
         <div class="about-content">
-            <!-- LEFT SIDE -->
+
+            <!-- =========================================
+                 LEFT SIDE
+            ========================================= -->
+
             <div class="about-left">
-                <!-- ABOUT IMAGE SECTION -->
+
+                <!-- IMAGES -->
+
                 <div class="about-images">
-                    <img src="me8.jpg" class="img-back" alt="">
-                    <img src="tabtme.jpg" class="img-main" alt="">
+
+                    <img src="me8.jpg" alt="Second Photo" class="img-back">
+
+                    <img src="tabtme.jpg" alt="Main Photo" class="img-main">
+
                 </div>
 
                 <!-- MUSIC SECTION -->
+
                 <div class="music-mini">
 
                     <!-- DECODE -->
+
                     <img src="decode.jpg" alt="Decode" onclick="playSong('decode.mp3', 'Decode - Paramore')">
 
                     <!-- KING FOR A DAY -->
+
                     <img src="king.jpg" alt="King For A Day" onclick="playSong('king.mp3', 'King For A Day - PTV')">
 
                     <!-- CIRCLES -->
+
                     <img src="circles.jpg" alt="Circles" onclick="playSong('circles.mp3', 'Circles - PTV')">
 
                 </div>
 
-                <!-- MUSIC PLAYER -->
+                <!-- AUDIO -->
+
                 <audio id="musicPlayer"></audio>
 
                 <!-- NOW PLAYING -->
+
                 <p class="music-note now-playing">
                     ✦ click an album to play a song
                 </p>
+
             </div>
 
-            <!-- TEXT -->
+            <!-- =========================================
+                 RIGHT SIDE
+            ========================================= -->
+
             <div class="about-text">
-                <h2 class="about-name">Joyce</h2>
-                <p class="about-role">
-                <p class="about-role">
-                    somewhere between growing up and figuring things out</p>
-                <!-- BIO -->
-                <div class="about-bio">
-                    <div class="about-bio">
-                        <div class="bio-title"> ✦ ⋆｡˚ abt me ⋆｡˚✦ </div>
-                        <p>Hi, I’m Joyce — an IT student who’s still figuring things out
-                            little by little while trying to enjoy the process along the way.</p>
-                        <p>I’m someone who enjoys quiet moments, good music,
-                            creative ideas, and turning simple things into something
-                            visually meaningful. </p>
-                        <p>Lately, I’ve been getting more interested in web design,
-                            editing, and creating spaces that feel personal and comforting.</p>
-                        <p>I may not always know exactly where I’m going,
-                            but I’ve learned that not everything has to be figured out immediately.</p>
-                        <p>So for now, I just want to keep creating memories,
-                            learning new things, and becoming a better version of myself
-                            at my own pace.</p>
 
-                        <p class="bio-end"> ✧ still learning. still growing. </p>
-                    </div>
+                <!-- TITLE -->
 
-
-                    <!-- HOBBIES -->
-                    <div class="hobby-box">
-                        <span class="hobby-icon">🎧</span>
-                        <p>listening to music</p>
-                    </div>
-                    <div class="hobby-box">
-                        <span class="hobby-icon">🎮</span>
-                        <p>playing games</p>
-                    </div>
-                    <div class="hobby-box">
-                        <span class="hobby-icon">🏸</span>
-                        <p>badminton</p>
-                    </div>
-                    <div class="hobby-box">
-                        <span class="hobby-icon">🏓</span>
-                        <p>table tennis</p>
-                    </div>
+                <div class="bio-title">
+                    ✦ ⋆｡˚ abt me ⋆｡˚✦
                 </div>
 
-                <!-- SKILLS -->
+                <!-- NAME -->
+
+                <h1 class="about-name">
+                    Joyce
+                </h1>
+
+                <!-- ROLE -->
+
+                <p class="about-role">
+                    somewhere between growing up and figuring things out
+                </p>
+
+                <!-- BIO -->
+
+                <div class="about-bio">
+
+                    <p>
+                        Hi, I’m Joyce — an IT student who’s still
+                        figuring things out little by little while
+                        trying to enjoy the process along the way.
+                    </p>
+
+                    <p>
+                        I’m someone who enjoys quiet moments,
+                        good music, creative ideas, and turning
+                        simple things into something visually meaningful.
+                    </p>
+
+                    <p>
+                        Lately, I’ve been getting more interested
+                        in web design, editing, and creating spaces
+                        that feel personal and comforting.
+                    </p>
+
+                    <p>
+                        I may not always know exactly where I’m going,
+                        but I’ve learned that not everything has to
+                        be figured out immediately.
+                    </p>
+
+                    <p>
+                        So for now, I just want to keep creating memories,
+                        learning new things, and becoming a better version
+                        of myself at my own pace.
+                    </p>
+
+                    <p class="bio-end">
+                        ✧ still learning. still growing.
+                    </p>
+
+                </div>
+
+                <!-- =========================================
+                     HOBBIES
+                ========================================= -->
+
+                <div class="hobbies">
+
+                    <div class="hobby-box">
+
+                        <span class="hobby-icon">
+                            🎧
+                        </span>
+
+                        <span>
+                            listening to music
+                        </span>
+
+                    </div>
+
+                    <div class="hobby-box">
+
+                        <span class="hobby-icon">
+                            🎮
+                        </span>
+
+                        <span>
+                            playing games
+                        </span>
+
+                    </div>
+
+                    <div class="hobby-box">
+
+                        <span class="hobby-icon">
+                            🏸
+                        </span>
+
+                        <span>
+                            badminton
+                        </span>
+
+                    </div>
+
+                    <div class="hobby-box">
+
+                        <span class="hobby-icon">
+                            🏓
+                        </span>
+
+                        <span>
+                            table tennis
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- =========================================
+                     SKILLS
+                ========================================= -->
+
                 <div class="skills">
+
                     <div class="bio-title">
                         ✦ ⋆｡˚ skill bar ⋆｡˚✦
                     </div>
+
+                    <!-- SKILL -->
+
                     <div class="skill">
+
                         <div class="skill-info">
-                            <span>gaming</span>
-                            <span>100%</span>
+
+                            <span>
+                                gaming
+                            </span>
+
+                            <span>
+                                100%
+                            </span>
+
                         </div>
 
                         <div class="skill-bar">
                             <div class="fill gaming"></div>
                         </div>
+
                     </div>
 
+                    <!-- SKILL -->
+
                     <div class="skill">
+
                         <div class="skill-info">
-                            <span>editing</span>
-                            <span>70%</span>
+
+                            <span>
+                                editing
+                            </span>
+
+                            <span>
+                                70%
+                            </span>
+
                         </div>
+
                         <div class="skill-bar">
                             <div class="fill editing"></div>
                         </div>
+
                     </div>
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>coding</span>
-                            <span>1%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="fill coding"></div>
-                        </div>
-                    </div>
+
+                    <!-- SKILL -->
+
                     <div class="skill">
 
                         <div class="skill-info">
-                            <span>collaboration with chat</span>
-                            <span>100%</span>
+
+                            <span>
+                                coding
+                            </span>
+
+                            <span>
+                                1%
+                            </span>
+
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="fill coding"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- SKILL -->
+
+                    <div class="skill">
+
+                        <div class="skill-info">
+
+                            <span>
+                                collaboration with chat
+                            </span>
+
+                            <span>
+                                100%
+                            </span>
+
                         </div>
 
                         <div class="skill-bar">
                             <div class="fill gaming"></div>
                         </div>
+
                     </div>
+
                 </div>
 
-                <!-- MOTIVATION -->
+                <!-- =========================================
+                     MOTIVATION
+                ========================================= -->
+
                 <div class="motivation">
 
-                    <p>“maybe life doesn’t always need a perfect plan.
-                        sometimes you just keep going,
-                        collect small moments,
-                        and slowly become someone new along the way.”</p>
+                    <p>
+                        “maybe life doesn’t always need
+                        a perfect plan. sometimes you
+                        just keep going, collect small
+                        moments, and slowly become
+                        someone new along the way.”
+                    </p>
+
                 </div>
+
             </div>
+
         </div>
 
     </section>
 
+    <!-- =========================================
+         BACK TO TOP
+    ========================================= -->
+
+    <button id="backToTop">
+        ↑
+    </button>
+
+    <!-- =========================================
+         SCRIPTS
+    ========================================= -->
+
     <script src="script.js"></script>
-    <script>
-        document.addEventListener("mousemove", (e) => {
-            const sparkle = document.createElement("div");
-            sparkle.className = "sparkle";
-            sparkle.style.left = e.clientX + "px";
-            sparkle.style.top = e.clientY + "px";
-            document.body.appendChild(sparkle);
-            setTimeout(() => {
-                sparkle.remove();
-            }, 800);
-        });
-    </script>
+
+    <!-- SPARKLES -->
+
     <script>
 
-        const player = document.getElementById("musicPlayer");
+        document.addEventListener("mousemove", (e) => {
+
+            const sparkle =
+                document.createElement("div");
+
+            sparkle.className = "sparkle-effect";
+
+            sparkle.style.left =
+                e.clientX + "px";
+
+            sparkle.style.top =
+                e.clientY + "px";
+
+            document.body.appendChild(sparkle);
+
+            setTimeout(() => {
+
+                sparkle.remove();
+
+            }, 800);
+
+        });
+
+    </script>
+
+    <!-- MUSIC PLAYER -->
+
+    <script>
+
+        const player =
+            document.getElementById("musicPlayer");
+
         const nowPlaying =
             document.querySelector(".now-playing");
+
         let currentSong = "";
+
         function playSong(song, title) {
 
             /* SAME SONG = PAUSE */
+
             if (currentSong === song && !player.paused) {
+
                 player.pause();
+
                 nowPlaying.innerHTML =
                     "music paused . . .";
+
                 return;
             }
-            /* PLAY SONG */
+
+            /* PLAY */
+
             currentSong = song;
+
             player.src = song;
+
             player.volume = 0.25;
+
             player.play();
+
             nowPlaying.innerHTML =
                 "now playing: " + title + " ✦";
         }
+
     </script>
+
     <!-- BACK TO TOP -->
 
-    <button id="backToTop">
-
-        ↑
-
-    </button>
     <script>
 
         const backToTop =
@@ -263,10 +442,15 @@
                 top: 0,
 
                 behavior: "smooth"
+
             });
+
         });
 
     </script>
+
+    <!-- MOBILE MENU -->
+
     <script>
 
         const menuToggle =
@@ -282,6 +466,7 @@
         });
 
     </script>
+
 </body>
 
 </html>
