@@ -698,6 +698,7 @@ nav {
 
     margin-left: 0;
 }
+
 /* BOTH IMAGES */
 
 .about-images img {
@@ -1087,7 +1088,7 @@ nav {
 
 /* MUSIC SECTION */
 
-.music-mini{
+.music-mini {
 
     display: flex;
 
@@ -1099,9 +1100,10 @@ nav {
 
     margin-left: 0;
 }
+
 /* ALBUM */
 
-.music-mini img{
+.music-mini img {
 
     width: 100px;
     height: 100px;
@@ -1115,7 +1117,7 @@ nav {
     position: relative;
 
     box-shadow:
-        0 10px 24px rgba(0,0,0,.12);
+        0 10px 24px rgba(0, 0, 0, .12);
 
     transition:
         transform .5s ease,
@@ -2413,4 +2415,71 @@ nav {
 
     background:
         rgba(168, 207, 165, .32);
+}
+
+/* BACK TO TOP */
+
+#backToTop {
+
+    position: fixed;
+
+    bottom: 30px;
+    right: 30px;
+
+    width: 52px;
+    height: 52px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    z-index: 999;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .35s ease;
+
+    background:
+        rgba(255, 255, 255, .22);
+
+    backdrop-filter: blur(16px);
+
+    -webkit-backdrop-filter: blur(16px);
+
+    border:
+        1px solid rgba(255, 255, 255, .35);
+
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, .08);
+
+    color: #4f6657;
+
+    font-size: 1.2rem;
+}
+
+/* SHOW */
+
+#backToTop.show {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+/* HOVER */
+
+#backToTop:hover {
+
+    transform:
+        translateY(-5px);
+
+    background:
+        rgba(255, 255, 255, .32);
+
+    box-shadow:
+        0 18px 34px rgba(0, 0, 0, .12);
 }
